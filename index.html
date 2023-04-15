@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página para contratar guías turísticos y tours en México">
+    <meta name="robots" content="index,follow">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Veredas de México</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <a href="#">Veredas de México</a>
+            </div>
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Tours</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+                <li class="nav__items">
+                    <img src="./Assets/icons/bx-search.svg" class="nav__img" alt="Imagén de icono de búsqueda">
+                </li>
+                <img src="./Assets/icons/bx-x.svg" class="nav__close" alt="">
+            </ul>
+            <div class="nav__menu">
+                <img src="../assets/icons/menu.svg" class=" nav__img" alt="">
+            </div>
+        </nav>
+        <section class="hero__container container">
+            <h1 class="hero__title" id="title__mov">Caminos increibles..<br>Recuerdos imborrables</h1>
+        </section>
+    </header>
+    <main>
+        <section class="welcome">
+            <div class="container">
+                <h2 class="subtitle">Y queremos que te sientas como en casa!</h2>
+                <div class="welcome__container">
+                    <p class="welcome__text">
+                        Amamos nuestro país y nos encanta caminarlo, descubrirlo, degustarlo, admirarlo… Y nada sería de mayor gusto para nosotros que el poder ser tus anfitriones durante tu visita en él, y que juntos puedas disfrutar y percibir, al igual que nosotros, toda la magia que en él se encuentra. <br> <br>
+                        Para ello contamos con recorridos previamente diseñados para conocer cada uno de los emblemáticos lugares que nos han caracterizado, pero si lo requieres, también podemos diseñar una visita con base en tus intereses. <br> <br>
+                        Todas nuestras visitas son solo para ti y tu familia, y nuestros guías se encuentran certificados ante la <a href="https://www.gob.mx/sectur">Secretaría de Turismo.</a>
+                    <div class="welcome__container--img">
+                        <img src="./assets/photos/girls_in_teotihuacan.jpg" alt="Girls sitting in front of the Sun pyramid in Teotihuacan">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container tours">
+            <h2 class="subtitle">Tours más Populares</h2>
+            <a href="tours.html" class="tours__paragraph">Todos nuestros tours</a>
+            <div class="tours__main"> 
+                <article class="tours__imgs">
+                    <a href="./tours.html#cdmx" class="tours__img1">
+                        <h3 class="tours__title">CDMX</h3>
+                    </a>    
+                </article>
+                <article class="tours__imgs">
+                    <a href="tours.html#teotihuacan" class="tours__img2">
+                        <h3 class="tours__title">Teotihuacan</h3>
+                    </a>    
+                </article>  
+                <article class="tours__imgs">
+                    <a href="tours.html#oaxaca" class="tours__img3">
+                        <h3 class="tours__title">Oaxaca</h3>
+                    </a>    
+                </article>       
+            </div>
+        </section>
+        <section class="testimony">
+            <h2 class="testimony__subtitle">Experiencias vividas con nosotros</h2>
+            <div class="testimony__container container"> 
+                <img src="./assets/icons/leftarrow.svg" alt="Flecha izquierda" class="testimony__arrow" id="before">
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Francisco Jimenez, <span class="testimony__course">Estudiante</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nihil tenetur, aspernatur ex impedit ab tempora mollitia ratione unde quisquam vel illum nostrum! Officiis dolorum tempore repellat iusto ad! Eius.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./assets/photos/face1.jpg" class="testimony__img" alt="Fotografía de persona">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Hector Trujillo, <span class="testimony__course">Maestro</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nihil tenetur, aspernatur ex impedit ab tempora mollitia ratione unde quisquam vel illum nostrum! Officiis dolorum tempore repellat iusto ad! Eius. </p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./assets/photos/face2.jpg" class="testimony__img2" alt="Fotografía de persona">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Marina Martinez, <span class="testimony__course">Empleada</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nihil tenetur, aspernatur ex impedit ab tempora mollitia ratione unde quisquam vel illum nostrum! Officiis dolorum tempore repellat iusto ad! Eius.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./assets/photos/face3.jpg" class="testimony__img" alt="Fotografía de persona">
+                    </figure>
+                </section>
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Mi nombre es Guadalupe Peréz, <span class="testimony__course">Albañil</span></h2>
+                        <p class="testimony__review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nihil tenetur, aspernatur ex impedit ab tempora mollitia ratione unde quisquam vel illum nostrum! Officiis dolorum tempore repellat iusto ad! Eius.</p>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./assets/photos/face4.jpg" class="testimony__img" alt="Fotografía de persona">
+                    </figure>
+                </section>
+                <img src="./assets/icons/rightarrow.svg" alt="Flecha derecha" class="testimony__arrow" id="next">
+            </div>
+        </section>
+        <section class="questions container">
+            <h2 class="subtitle">Preguntas frecuentes</h2>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Puedo crear mi ruta de tour?
+                            <span class="questions__arrow">
+                                <img src="./assets/icons/arrow.svg" class="questions__img" alt="Flecha para colapsar texto">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, animi minus, provident modi quisquam vel facere maxime sed corporis labore necessitatibus aperiam. Sed non autem vero tempora, suscipit iusto impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis fuga sapiente deserunt tempora laudantium excepturi nemo iure molestiae dignissimos, ut soluta est nihil expedita tenetur blanditiis sint cum! Dolore, perspiciatis.</p>
+                    </div>
+                </article>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuántas personas se necesitan para realizar el tour?
+                            <span class="questions__arrow">
+                                <img src="./assets/icons/arrow.svg" class="questions__img" alt="Flecha para colapsar texto">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, animi minus, provident modi quisquam vel facere maxime sed corporis labore necessitatibus aperiam. Sed non autem vero tempora, suscipit iusto impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis fuga sapiente deserunt tempora laudantium excepturi nemo iure molestiae dignissimos, ut soluta est nihil expedita tenetur blanditiis sint cum! Dolore, perspiciatis.</p>
+                    </div>
+                </article>
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Aceptan cualquier tipo de pago?
+                            <span class="questions__arrow">
+                                <img src="./assets/icons/arrow.svg" class="questions__img" alt="Flecha para colapsar texto">
+                            </span>
+                        </h3>
+                        <p class="questions__show">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, animi minus, provident modi quisquam vel facere maxime sed corporis labore necessitatibus aperiam. Sed non autem vero tempora, suscipit iusto impedit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis fuga sapiente deserunt tempora laudantium excepturi nemo iure molestiae dignissimos, ut soluta est nihil expedita tenetur blanditiis sint cum! Dolore, perspiciatis.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="questions__offer">
+                <h2 class="subtitle">¿Estás listo para vivir una experiencia increíble con nosotros?</h2>
+                <a href="https://wa.me/525526569891?text=" class="cta">Contáctanos</a>
+            </section>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">Veredas de México</h2>
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="./index.html" class="nav__links">Incio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./tours.html" class="nav__links">Tours</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="./nosotros.html" class="nav__links">Nosotros</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="https://wa.me/525526569891?text=" class="nav__links">Contacto</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="" class="nav__links">English</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="footer__form">
+                <h2 class="footer__newsletter">Suscribete a la newsletter</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/VeredasdeMexico" class="footer__icons"> <img src="./assets/icons/facebook.svg" alt="Logo Facebook" class="footer__img"></a>
+                <a href="https://www.instagram.com/penelopesardaneta/" class="footer__icons"> <img src="./assets/icons/instagram.svg" alt="Logo Instagram" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Veredas de México 2023</h3>
+        </section>
+    </footer>
+    <script src="./js/splitype.js"></script>
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/tittle_ef.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
