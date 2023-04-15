@@ -10,7 +10,7 @@ A website for tours in Mexico made with html, css &amp; javascript
 * [Portfolio](https://iscodelcollado.com)
 
 ## Watch the live example
-- [link]
+- [link](https://pakolalo.github.io/veredas_de_mexico/)
 
 ## Installation
 
