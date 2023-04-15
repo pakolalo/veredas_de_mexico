@@ -1,7 +1,7 @@
 ## Description
 
 veredas_de_mexico
-A website for tours in Mexico made with html, css &amp; javascript
+A website under construction for tours in Mexico made with html, css &amp; javascript
 
 ## Autor
 **Isco del Collado**
