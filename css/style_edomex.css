@@ -1,0 +1,467 @@
+:root {
+    --white: #ffffffff;
+    --pink: #b20a55;
+    --black: #000000;
+    --greenb: #368986;
+
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fs-1: 4.8rem;
+    --fs-2: 4.5rem;
+    --fs-3: 4rem;
+    --fs-4: 2.4rem;
+    --fs-5: 2rem;
+    --fs-6: 1.8rem;
+    --fs-7: 1.6rem;
+    --fs-8: 1.2rem;
+
+    --fw-300: 300;
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+
+    --padding-container: 100px 0;
+
+}
+
+    *,
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+li { list-style: none;}
+
+a,
+img,
+span,
+data,
+button { display: block;}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img { height: auto;}
+
+html {
+    font-family: var(--ff-poppins);
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+.wh__container {
+    position: fixed;
+    right: 15px;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #00e676;
+    z-index: 1;
+}
+
+.wh__container img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.wh__container:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    display: grid;
+    grid-template-rows:100px 1fr;
+    color: var(--white);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #00000042 0%, #00000042 100%), url(../assets/photos/teotihuacan_medium.jpg);
+    background-size: cover;
+    background-position: 50% 40%;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 50% 100%, 0 95%);
+    z-index: -1;
+}
+
+.nav {
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo a {
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+}
+
+.nav__link {
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items {
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.nav__items:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.nav__links {
+    text-decoration: none;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-6);
+}
+
+.nav__menu {
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img {
+    display: block;
+    width: 30px;
+}
+
+.nav__close {
+    display:var(--show, none) ;
+}
+
+.hero__container {
+   --padding-container:0;
+   display: grid;
+   grid-template-rows: max-content;
+   align-content: center;
+   gap: 1em;
+   text-align: left;
+}
+
+.hero__title {
+    font-size:var(--fs-1) ;
+}
+
+.hero__paragraph {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-6);
+    text-align: justify;
+    text-shadow: 2px 6px 10px #424242;
+}
+
+.subtitle {
+    margin: 20px 0;
+    font-size: var(--fs-3);
+    font-weight: var(--fw-600);
+    text-align: center;
+}
+
+.tours__paragraph {
+    font-size: var(--fs-7);
+    text-align: justify;
+    padding-bottom: 75px;
+}
+
+.tours3 {
+    background-color: var(--greenb);
+    color: var(--white);
+}
+
+.tours3 .tours__paragraph {
+    padding-bottom: 20px;
+}
+
+.tours__main {
+    padding: 80px 0 20px;
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    overflow: hidden;
+}
+
+.tours3__card {
+    position: relative;
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 30%;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden; 
+}
+
+.tours3__card:hover {
+    transform: scale(.95);
+    transition: .3s;
+}
+
+.tours3__img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-1 {
+    background-image: url(../assets/photos/palacio_small.jpg);
+}
+
+.card-2 {
+    background-image: url(../assets/photos/teotihuacan2small.jpg);
+}
+
+.card-3 {
+    background-image: url(../assets/photos/piramide_de_sol_smalll.jpg);
+}
+
+.tours3__title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.tours4 .tours3__card{
+    width: 45%;
+ }
+
+.tours4 .card-1 {
+    background-image: url(../assets/photos/convento_agustino.jpeg);
+}
+
+.tours4 .card-2 {
+    background-image: url(../assets/photos/casa_de_las_aguilas.jpeg);
+}
+
+.tours5 {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.tours5 .tours3__card{
+    width: 80%;
+ }
+
+.tours5 .card-1 {
+    background-image: url(../assets/photos/tepotzotlan.jpg);
+}
+
+.questions {
+    text-align: center;
+}
+
+.questions__container {
+    display: grid;
+    gap: 2em;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.cta {
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    font-size: 1.5rem;
+}
+
+.footer {
+    background-color: var(--greenb);
+    color: var(--white);
+}
+
+.footer__container {
+    --padding-container:30px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav--footer {
+    display: grid;
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.nav--footer .nav__logo a {
+    text-shadow: none;
+}
+
+.nav__link--footer {
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.nav__link--footer .nav__links {
+    text-shadow: none;
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__copy {
+    display: flex;
+    justify-content: space-between;
+    --padding-container:10px 0;
+    color: white;
+}
+
+.footer__copyright {
+    text-align: center;
+    padding-bottom: 15px;
+    font-weight: var(--fw-300);
+}
+
+.footer__icons{
+    margin-bottom: 30px;
+}
+
+.footer__payment {
+    display: flex;
+    gap: 2em;
+}
+
+.footer__payment .footer__icons {
+    width: 60px;
+}
+
+.footer__img {
+    width: 50px;
+}
+
+
+@media (max-width:850px) {
+    .nav__menu {
+        display: block;
+    }
+
+    .nav__link--menu {
+        position: fixed;
+        background-color: black;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        z-index: 100;
+        opacity: 0;
+        pointer-events: none;
+        transition: .7s opacity;
+    }
+
+    .nav__link--show {
+        --show:block;
+        opacity: 1;
+        pointer-events: unset;
+    }
+
+    .nav__close {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .tours__img1 {
+        font-size: 1.5rem;
+    }
+
+
+    .footer__container {
+        flex-wrap: wrap;
+    }
+
+    .nav--footer {
+        width: 100%;
+        justify-items: center;
+    }
+
+    .nav__link--footer {
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+}
+
+@media (max-width:600px){
+    .wh__container {
+        width: 45px;
+        height: 45px;
+    }
+
+    .footer__copy {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .footer__title {
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+
+    .nav--footer {
+        padding-bottom: 60px;
+    }
+
+    .nav__link--footer {
+        justify-content: space-between;
+    }
+
+}
